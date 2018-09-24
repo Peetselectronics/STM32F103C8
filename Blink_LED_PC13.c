@@ -1,10 +1,9 @@
-//Blink by peet's electronics 
+//Blink by peet's electronics
 //Put this code in main.c of new project in TrueStudio
 #include <stddef.h>
 #include "stm32f10x.h"
 
-//Private variables 
-//USART_InitTypeDef USART_InitStructure;
+//Private variables
  GPIO_InitTypeDef  GPIO_InitStructure;
 
 int main(void)
@@ -25,9 +24,8 @@ int main(void)
   //Infinite loop
   while (1)
   {
-          //delay
+                //delay
 	        for(i=0;i<delayT;i++);
-
 
 	        GPIOC->ODR ^= GPIO_Pin_13;
 
@@ -36,4 +34,3 @@ int main(void)
 
   }
 }
-
